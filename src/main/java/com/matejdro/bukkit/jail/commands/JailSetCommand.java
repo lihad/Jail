@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,14 +15,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-import com.matejdro.bukkit.jail.InputOutput;
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailCell;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.Setting;
-import com.matejdro.bukkit.jail.Util;
-import com.matejdro.bukkit.jail.WorldEditHandler;
+import main.java.com.matejdro.bukkit.jail.InputOutput;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailCell;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.WorldEditHandler;
 
 public class JailSetCommand extends BaseCommand {
 	public static HashMap<String,SelectionPlayer> players = new HashMap<String,SelectionPlayer>();

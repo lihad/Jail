@@ -1,11 +1,11 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.matejdro.bukkit.jail.JailCellCreation;
-import com.matejdro.bukkit.jail.JailZoneCreation;
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.JailCellCreation;
+import main.java.com.matejdro.bukkit.jail.JailZoneCreation;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public class JailStopCommand extends BaseCommand {
 	

@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail;
+package main.java.com.matejdro.bukkit.jail;
 
 import java.util.ArrayList;
 import java.util.Arrays;

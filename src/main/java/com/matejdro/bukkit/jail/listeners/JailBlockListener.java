@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.listeners;
+package main.java.com.matejdro.bukkit.jail.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -6,13 +6,13 @@ import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.permissions.PermissionDefault;
 
-import com.matejdro.bukkit.jail.InputOutput;
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.JailZoneManager;
-import com.matejdro.bukkit.jail.Setting;
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.InputOutput;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.JailZoneManager;
+import main.java.com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public class JailBlockListener implements Listener {
 	

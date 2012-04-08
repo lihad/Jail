@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.listeners;
+package main.java.com.matejdro.bukkit.jail.listeners;
 
 import java.util.Random;
 
@@ -13,11 +13,11 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntityExplodeEvent;
 
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.JailZoneManager;
-import com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.JailZoneManager;
+import main.java.com.matejdro.bukkit.jail.Setting;
 
 public class JailEntityListener implements Listener {
 	private Jail plugin;

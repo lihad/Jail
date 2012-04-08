@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.listeners;
+package main.java.com.matejdro.bukkit.jail.listeners;
 
 import org.bukkit.GameMode;
 import org.bukkit.Location;
@@ -16,13 +16,13 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.permissions.PermissionDefault;
 
-import com.matejdro.bukkit.jail.InputOutput;
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailCell;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.Setting;
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.InputOutput;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailCell;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public class JailPlayerProtectionListener implements Listener {
 	private Jail plugin;

@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import net.milkbowl.vault.economy.Economy;
 
@@ -10,12 +10,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
-import com.matejdro.bukkit.jail.InputOutput;
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.Setting;
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.InputOutput;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public class JailPayCommand extends BaseCommand {
 	

@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail.listeners;
+package main.java.com.matejdro.bukkit.jail.listeners;
 
 import org.bukkit.entity.Wolf;
 import org.bukkit.event.EventHandler;
@@ -11,14 +11,14 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import com.matejdro.bukkit.jail.InputOutput;
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailCellCreation;
-import com.matejdro.bukkit.jail.JailPrisoner;
-import com.matejdro.bukkit.jail.JailZoneCreation;
-import com.matejdro.bukkit.jail.PrisonerManager;
-import com.matejdro.bukkit.jail.Setting;
-import com.matejdro.bukkit.jail.commands.JailSetCommand;
+import main.java.com.matejdro.bukkit.jail.InputOutput;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailCellCreation;
+import main.java.com.matejdro.bukkit.jail.JailPrisoner;
+import main.java.com.matejdro.bukkit.jail.JailZoneCreation;
+import main.java.com.matejdro.bukkit.jail.PrisonerManager;
+import main.java.com.matejdro.bukkit.jail.Setting;
+import main.java.com.matejdro.bukkit.jail.commands.JailSetCommand;
 
 public class JailPlayerListener implements Listener {
 	

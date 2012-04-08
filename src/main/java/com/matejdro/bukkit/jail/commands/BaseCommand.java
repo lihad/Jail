@@ -1,10 +1,10 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionDefault;
 
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public abstract class BaseCommand {
 //Command system concept by oliverw92

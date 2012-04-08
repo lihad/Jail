@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail;
+package main.java.com.matejdro.bukkit.jail;
 
 /*
  * Copyright 2011 Tyler Blair. All rights reserved.

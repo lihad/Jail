@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail;
+package main.java.com.matejdro.bukkit.jail;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,37 +16,36 @@ import org.bukkit.event.Event;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.matejdro.bukkit.jail.commands.BaseCommand;
-import com.matejdro.bukkit.jail.commands.JailCheckCommand;
-import com.matejdro.bukkit.jail.commands.JailClearCommand;
-import com.matejdro.bukkit.jail.commands.JailClearForceCommand;
-import com.matejdro.bukkit.jail.commands.JailCommand;
-import com.matejdro.bukkit.jail.commands.JailCreateCellsCommand;
-import com.matejdro.bukkit.jail.commands.JailCreateCommand;
-import com.matejdro.bukkit.jail.commands.JailCreateWeCommand;
-import com.matejdro.bukkit.jail.commands.JailDeleteCellCommand;
-import com.matejdro.bukkit.jail.commands.JailDeleteCellsCommand;
-import com.matejdro.bukkit.jail.commands.JailDeleteCommand;
-import com.matejdro.bukkit.jail.commands.JailListCellsCommand;
-import com.matejdro.bukkit.jail.commands.JailListCommand;
-import com.matejdro.bukkit.jail.commands.JailMuteCommand;
-import com.matejdro.bukkit.jail.commands.JailPayCommand;
-import com.matejdro.bukkit.jail.commands.JailReloadCommand;
-import com.matejdro.bukkit.jail.commands.JailSetCommand;
-import com.matejdro.bukkit.jail.commands.JailStatusCommand;
-import com.matejdro.bukkit.jail.commands.JailStickCommand;
-import com.matejdro.bukkit.jail.commands.JailStopCommand;
-import com.matejdro.bukkit.jail.commands.JailTeleInCommand;
-import com.matejdro.bukkit.jail.commands.JailTeleOutCommand;
-import com.matejdro.bukkit.jail.commands.JailTransferAllCommand;
-import com.matejdro.bukkit.jail.commands.JailTransferCommand;
-import com.matejdro.bukkit.jail.commands.UnJailCommand;
-import com.matejdro.bukkit.jail.commands.UnJailForceCommand;
-import com.matejdro.bukkit.jail.listeners.JailBlockListener;
-import com.matejdro.bukkit.jail.listeners.JailEntityListener;
-import com.matejdro.bukkit.jail.listeners.JailPlayerListener;
-import com.matejdro.bukkit.jail.listeners.JailPlayerProtectionListener;
-import com.matejdro.bukkit.jail.listeners.JailSpoutListener;
+import main.java.com.matejdro.bukkit.jail.commands.BaseCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailCheckCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailClearCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailClearForceCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailCreateCellsCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailCreateCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailCreateWeCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailDeleteCellCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailDeleteCellsCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailDeleteCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailListCellsCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailListCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailMuteCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailPayCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailReloadCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailSetCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailStatusCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailStickCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailStopCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailTeleInCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailTeleOutCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailTransferAllCommand;
+import main.java.com.matejdro.bukkit.jail.commands.JailTransferCommand;
+import main.java.com.matejdro.bukkit.jail.commands.UnJailCommand;
+import main.java.com.matejdro.bukkit.jail.commands.UnJailForceCommand;
+import main.java.com.matejdro.bukkit.jail.listeners.JailBlockListener;
+import main.java.com.matejdro.bukkit.jail.listeners.JailEntityListener;
+import main.java.com.matejdro.bukkit.jail.listeners.JailPlayerListener;
+import main.java.com.matejdro.bukkit.jail.listeners.JailPlayerProtectionListener;
 
 public class Jail extends JavaPlugin {
 	public static Logger log = Logger.getLogger("Minecraft");
@@ -55,7 +54,6 @@ public class Jail extends JavaPlugin {
 	private JailBlockListener blockListener;
 	private JailPlayerProtectionListener playerPreventListener;
 	private JailEntityListener entityListener;
-	private JailSpoutListener spoutListener;
 	public JailAPI API;
 	public InputOutput IO;
 	public static HashMap<String,JailZone> zones = new HashMap<String,JailZone>();
@@ -110,13 +108,6 @@ public class Jail extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(entityListener, this);
 		getServer().getPluginManager().registerEvents(playerListener, this);
 		getServer().getPluginManager().registerEvents(playerPreventListener, this);
-
-		Plugin plugin = Jail.instance.getServer().getPluginManager().getPlugin("Spout");
-		if (plugin != null)
-		{
-			spoutListener = new JailSpoutListener();
-			getServer().getPluginManager().registerEvents(spoutListener, this);
-		}
 		
 		timer = new Timer(1000,action);
 		timer.start();

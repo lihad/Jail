@@ -1,8 +1,8 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import org.bukkit.command.CommandSender;
 
-import com.matejdro.bukkit.jail.PrisonerManager;
+import main.java.com.matejdro.bukkit.jail.PrisonerManager;
 
 public class JailCommand extends BaseCommand {	
 	public JailCommand()

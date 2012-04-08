@@ -1,11 +1,11 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailZone;
-import com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailZone;
+import main.java.com.matejdro.bukkit.jail.Util;
 
 public class JailTeleInCommand extends BaseCommand {	
 	public JailTeleInCommand()

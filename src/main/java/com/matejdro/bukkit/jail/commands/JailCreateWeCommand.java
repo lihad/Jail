@@ -1,14 +1,14 @@
-package com.matejdro.bukkit.jail.commands;
+package main.java.com.matejdro.bukkit.jail.commands;
 
 import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-import com.matejdro.bukkit.jail.Jail;
-import com.matejdro.bukkit.jail.JailZoneCreation;
-import com.matejdro.bukkit.jail.Util;
-import com.matejdro.bukkit.jail.WorldEditHandler;
+import main.java.com.matejdro.bukkit.jail.Jail;
+import main.java.com.matejdro.bukkit.jail.JailZoneCreation;
+import main.java.com.matejdro.bukkit.jail.Util;
+import main.java.com.matejdro.bukkit.jail.WorldEditHandler;
 
 public class JailCreateWeCommand extends BaseCommand {	
 	public JailCreateWeCommand()

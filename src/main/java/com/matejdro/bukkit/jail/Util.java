@@ -1,4 +1,4 @@
-package com.matejdro.bukkit.jail;
+package main.java.com.matejdro.bukkit.jail;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -19,7 +19,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.permissions.PermissionDefault;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
-import org.getspout.spoutapi.SpoutManager;
 
 public class Util {
     public static Permission permission = null;
@@ -126,14 +125,7 @@ public class Util {
     
     public static void changeSkin(Player player, String skin)
 	{
-		Plugin plugin = Jail.instance.getServer().getPluginManager().getPlugin("Spout");
-		if (plugin != null)
-		{			
-			if (!skin.trim().isEmpty())
-				SpoutManager.getAppearanceManager().setGlobalSkin(player, skin);
-			else
-				SpoutManager.getAppearanceManager().resetGlobalSkin(player);
-		}
+
 	}
         
     public static void setPermissionsGroups(String playerName, List<String> groups, String world)
